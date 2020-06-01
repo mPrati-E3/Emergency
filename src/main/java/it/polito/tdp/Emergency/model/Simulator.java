@@ -183,7 +183,7 @@ public class Simulator {
 				// diventa RED
 				paz.setColore(CodiceColore.RED);
 				attesa.add(paz);
-				queue.add(new Event(e.getTime().plus(DURATION_RED),
+				queue.add(new Event(e.getTime().plus(TIMEOUT_RED),
 						EventType.TIMEOUT, paz));
 				break;
 			case RED:
