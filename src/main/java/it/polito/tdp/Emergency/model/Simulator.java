@@ -12,9 +12,9 @@ import it.polito.tdp.Emergency.model.Paziente.CodiceColore;
 public class Simulator {
 
 	// PARAMETRI DI SIMULAZIONE
-	private int NS = 5; // numero studi medici
+	private final int NS = 5; // numero studi medici
 
-	private int NP = 150; // numero di pazienti
+	private final int NP = 150; // numero di pazienti
 	private Duration T_ARRIVAL = Duration.ofMinutes(5); // intervallo tra i pazienti
 
 	private final Duration DURATION_TRIAGE = Duration.ofMinutes(5);
@@ -225,17 +225,12 @@ public class Simulator {
 		return NS;
 	}
 
-	public void setNS(int nS) {
-		NS = nS;
-	}
+
 
 	public int getNP() {
 		return NP;
 	}
 
-	public void setNP(int nP) {
-		NP = nP;
-	}
 
 	public Duration getT_ARRIVAL() {
 		return T_ARRIVAL;

@@ -7,7 +7,6 @@ public class TestSimulator {
 
 	public static void main(String[] args) {
 		Simulator sim = new Simulator() ;
-		sim.setNS(2);
 		sim.setT_ARRIVAL(Duration.ofMinutes(3));
 		sim.init();
 		sim.run();
